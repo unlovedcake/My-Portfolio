@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/surekeep.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/flutter-logo.png" type="image/x-icon">
 
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -15,8 +15,34 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
 
-    <title>My Digital Portfolio</title>
+    <title>Mon Portfolio</title>
 </head>
+
+<style>
+    .filters__button {
+
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .skills__name {
+
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .skills__level {
+
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .about_me {
+
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+</style>
 
 <body>
     <!--=============== HEADER ===============-->
@@ -53,24 +79,24 @@
                 <div class="profile__info-group">
                     <h3 class="profile__info-number">2</h3>
                     <p class="profile__info-description">
-                        Years of <br> experience
+                        Years of Experience
                     </p>
                 </div>
                 <div class="profile__info-group">
                     <h3 class="profile__info-number">+4</h3>
                     <p class="profile__info-description">
-                        Completed <br> projects
+                        Completed Projects
                     </p>
                 </div>
                 <div class="profile__info-group">
-                    <h3 class="profile__info-number">4</h3>
-                    <p class="profile__info-description">Satisfied <br> customers</p>
+                    <h3 class="profile__info-number">3</h3>
+                    <p class="profile__info-description">Satisfied Client</p>
                 </div>
             </div>
 
             <div class="profile__buttons">
                 <!-- Insert your CV -->
-                <a download="" href="assets/pdf/resume.docx" class="button">
+                <a download="" href="assets/pdf/Mon-Resume.docx" class="button">
                     Download CV <i class="ri-download-line"></i>
                 </a>
 
@@ -97,10 +123,10 @@
                 <button class="filters__button filter-tab-active" data-target="#projects">
                     Projects
                 </button>
-                <button class="filters__button" data-target="#skills">
+                <button onclick="buttonSkills()" class="filters__button" data-target="#skills">
                     Skills
                 </button>
-                <button class="filters__button" data-target="#aboutme">
+                <button onclick="buttonAbout()" class="filters__button" data-target="#aboutme">
                     About
                 </button>
                 <button class="filters__button" data-target="#contact">
@@ -172,7 +198,7 @@
                                 <span class="projects__subtitle">Flutter Mobile App</span>
                                 <h3 class="projects__title">Payday Today</h3>
                                 <h5>This is an app that the Employee is here to transact on the payslip for the
-                                    employee's salary. Including Banking Services.</h5><br>
+                                    employee's salary. Including Banking Srevices.</h5><br>
                                 <a href="https://github.com/SigfridGK/flutter-payday-today"
                                     class="projects__button button button__small">
                                     <i class="ri-link"> Go to my Github</i>
@@ -281,7 +307,7 @@
 
                                     <div>
                                         <h3 class="skills__name">Git</h3>
-                                        <span class="skills__level">Advance</span>
+                                        <span class="skills__level">Intermediate</span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
@@ -327,7 +353,7 @@
                                         <span class="skills__level">Advance</span>
                                     </div>
                                 </div>
-                                  <div class="skills__data">
+                                <div class="skills__data">
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Rest API</h3>
@@ -361,7 +387,10 @@
                                         <h3 class="skills__name">C</h3>
                                         <span class="skills__level">Basic</span>
                                     </div>
+
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -373,16 +402,72 @@
                     <div class="skills__area">
                         <h3 class="skills__title">About Me</h3>
 
-                        <p>An aspiring back-end/front-end developer and UI/UX designer
-                            for web technologies. I spent most of my free time designing
-                            my friend’s and other people's project and thesis work for extra
-                            income. I am interested in learning more about the latest and most efficient frameworks or
-                            tools that will increase overall productivity. I am a type of Altruism but not naive. I help
-                            people if I think they are deserving. Cause I know the feeling that you need help but no one
-                            is willing to offer an open hand. Yes, I have a passion for the programming path. I am
-                            focusing on what is important or interesting things. Also, one of my goals is to improve
-                            myself continuously and provide long-term quality and enjoyable user experiences to my
-                            clients.</p>
+                        <p class="about_me">As a Flutter developer with 2 years of experience, I have gained extensive
+                            expertise in creating innovative and dynamic mobile applications that deliver an exceptional
+                            user experience. My in-depth knowledge of the Flutter framework and the Dart programming
+                            language has allowed me to effectively utilize the latest tools and technologies to bring
+                            client's visions to life.
+
+                            Throughout my career, I have developed a wide range of applications for clients in
+                            freelance. My passion for coding and commitment to delivering high-quality results have
+                            earned me a reputation as a reliable and skilled developer.
+
+                            In my most recent project, I leveraged Flutter's powerful features to create a seamless and
+                            intuitive mobile app for a leading Good Apps company. The app received rave reviews from
+                            both users and the client, who praised its smooth navigation, responsive design, and fast
+                            performance.
+
+                            I am confident in my ability to tackle even the most challenging projects, and I am always
+                            eager to learn new skills and technologies to further enhance my development capabilities.
+                            Whether working in a team environment or independently, I am dedicated to delivering
+                            exceptional results and exceeding clients' expectations. </p>
+
+
+                        <br>
+                        <h3 class="about_me skills__title">Task and Responsibilities</h3>
+                        <ul class="about_me">
+
+                            <li class="about_me"> • Design, develop and maintain high-quality, scalable and
+                                user-friendly mobile
+                                applications using Flutter framework.</li>
+
+
+                            <li class="about_me"> • Write clean, efficient and maintainable code, following best
+                                practices and coding
+                                standards.</li>
+
+
+                            <li class="about_me"> • Implement UI designs and interactions, ensuring seamless user
+                                experience and
+                                performance. </li>
+
+
+
+                            <li class="about_me"> • Collaborate with cross-functional teams, including designers,
+                                back-end developers and
+                                product managers. </li>
+
+
+                            <li class="about_me"> • Debug, test and optimize applications to ensure they run smoothly
+                                and meet
+                                requirements. </li>
+
+
+                            <li class="about_me"> • Stay up-to-date with technologies in mobile
+                                development, and suggest improvements to the existing applications.
+                            </li>
+
+                            <li class="about_me"> • Participate in code reviews, project planning and estimation, and
+                                other agile
+                                software development practices.</li>
+
+                            <li class="about_me"> • Write comprehensive documentation and maintain application
+                                versioning.</li>
+
+                            <li class="about_me"> • Provide technical support and troubleshoot issues in a timely and
+                                professional
+                                manner.</li>
+                        </ul>
 
                     </div>
 
@@ -481,12 +566,62 @@
             &#169; Flutter Dev. All rigths reserved
         </span>
     </footer>
+    <script>
+
+        function buttonSkills() {
+            let currentWordIndexs = 0;
+            const skillsName = document.querySelectorAll('.skills__name');
+            skillsName.forEach((item, index) => {
+                setTimeout(() => {
+                    skillsName[currentWordIndexs].style.opacity = 0;
+                    currentWordIndexs = (currentWordIndexs + 1) % skillsName.length;
+                    skillsName[index].style.opacity = 1;
+
+                }, index * 300);
+            });
+        }
+
+
+        function buttonAbout() {
+            let currentWordIndexs = 0;
+
+            const skillsName = document.querySelectorAll('.about_me');
+            skillsName.forEach((item, index) => {
+                setTimeout(() => {
+                    skillsName[currentWordIndexs].style.opacity = 0;
+                    currentWordIndexs = (currentWordIndexs + 1) % skillsName.length;
+                    skillsName[index].style.opacity = 1;
+
+                }, index * 300);
+            });
+        }
+
+        window.addEventListener('load', function () {
+
+            let currentWordIndex = 0;
+
+
+            const navItems = document.querySelectorAll('.filters__button');
+            navItems.forEach((item, index) => {
+                setTimeout(() => {
+                    navItems[currentWordIndex].style.opacity = 0;
+                    currentWordIndex = (currentWordIndex + 1) % navItems.length;
+                    navItems[index].style.opacity = 1;
+
+                }, index * 500);
+            });
+
+        });
+
+    </script>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
