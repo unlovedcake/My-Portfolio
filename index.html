@@ -46,6 +46,20 @@
         opacity: 0;
         transition: opacity 1s ease-in-out;
     }
+
+    .video-container {
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 </style>
 
 <body>
@@ -141,16 +155,43 @@
             <div class="filters__sections">
                 <!--=============== PROJECTS ===============-->
                 <div class="projects__content grid filters__active" data-content id="projects">
+
+                    <article class="projects__card">
+                    
+                        <img src="assets/img/rescue_connect.jpg" alt="" class="projects__img">
+                        
+                            <div>
+                                <span class="projects__subtitle"><b>Flutter Mobile App</b> </span>
+                                <h3 >RESCUE CONNECT</h3>
+                                <h5>Empowering Heroes, Saving Lives.
+                                    Rescue Connect bridges the gap between emergencies and solutions, ensuring no call for help goes unanswered. <a href="https://drive.google.com/file/d/1OMRB-s2sVF1OdD8GgNFdJS9KLNqj8vgL/view?usp=sharing">Video Link</a></h5><br>
+                             
+                            </div>
+                        
+                    </article>
+
+                    <article class="projects__card">
+                    
+                        <img src="assets/img/dys_pharmacy.jpg" alt="" class="projects__img">
+                        
+                            <div>
+                                <span class="projects__subtitle"><b>Flutter Mobile App</b> </span>
+                                <h3 >DYS Pharmacy</h3>
+                                <h5>Providing health, wellness, and peace of mind with expert advice, quality medications, and personalized service. Your journey to better health starts here! <a href="https://drive.google.com/file/d/1OMZ8EtOVwG6eOtlHS9BZ4BjsL2d7LxJY/view">Video Link</a></h5><br>
+
+                            </div>
+                        
+                    </article>
                     <article class="projects__card">
                         <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                        <img src="assets/img/unleash.PNG" alt="" class="projects__img">
+                        <img src="assets/img/unleash.png" alt="" class="projects__img">
 
                         <div class="projects__modal">
                             <div>
                                 <span class="projects__subtitle">Flutter Mobile App</span>
                                 <h3 class="projects__title">Unleash</h3>
                                 <h5>Social Networking
-                                    Platform designed exclusively for pet owners and animal lovers.</h5><br>
+                                    Platform designed exclusively for pet owners and animal.</h5><br>
                                 <a href="https://play.google.com/store/search?q=unleash&c=apps"
                                     class="projects__button button button__small">
                                     <i class="ri-link"> Go to Play Store</i>
